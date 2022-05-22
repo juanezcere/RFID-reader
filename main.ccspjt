@@ -1,0 +1,73 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F876A
+CCSVerions=5.045
+Compiler=PCM
+CCSVersion=5.045
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[D:\ZabavyPrototype\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=5
+D1=14-07-2015
+D1_L=13
+D1_L1=[72878]Project Opened.
+D1_L2=[72922]Started Editing.
+D1_L3=[73282]Stopped Editing.
+D1_L4=[74549]Started Editing.
+D1_L5=[75880]Stopped Editing.
+D1_L6=[76869]Started Editing.
+D1_L7=[77280]Stopped Editing.
+D1_L8=[77731]Started Editing.
+D1_L9=[78180]Stopped Editing.
+TotalEdit=24
+TotalDebug=0
+D1_E=23
+D1_D=0
+D1_L10=[78598]Project Closed.
+D1_L11=[81286]Project Opened.
+D1_L12=[83594]Started Editing.
+D1_L13=[83895]Stopped Editing.
+D2=15-07-2015
+D2_L=4
+D2_L1=[69003]Project Opened.
+D2_L2=[69013]Started Editing.
+D2_L3=[69317]Stopped Editing.
+D2_E=1
+D2_D=0
+D2_L4=[77103]Project Closed.
+D3=18-07-2015
+D3_L=4
+D3_L1=[60096]Project Opened.
+D3_L2=[60660]Project Closed.
+D3_L3=[60712]Project Opened.
+D3_L4=[60747]Project Closed.
+D4=27-08-2015
+D4_L=2
+D4_L1=[53711]Project Opened.
+D4_L2=[53727]Project Closed.
+D5=29-08-2015
+D5_L=2
+D5_L1=[43351]Project Opened.
+D5_L2=[45110]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=25
+2=..\Zabavy\ZabavyController\ZabavyController.c
+t2=29
+Count=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=13
+[Units]
+Count=1
+1=main (main)

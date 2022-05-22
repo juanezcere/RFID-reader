@@ -1,0 +1,79 @@
+
+ROM used:   1769/8192 (22%)
+            1769/8192 (22%) including unused fragments
+
+            1.1 Average locations per line
+            4.8 Average locations per statement
+
+RAM used:   71/368 (19%) at main() level
+            103/368 (28%) worst case
+
+Stack used: 6 worst case (5 in main + 1 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  123    86  24  main.c
+  621     0   0  C:\Program Files (x86)\PICC\Devices\16F876A.h
+  344   179  49  RC522.h
+  456   100  27  C:\Program Files (x86)\PICC\Drivers\LCD.c
+----- -----
+ 1544   365 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     20   1    1             @delay_ms1
+0     15   1    1             @delay_us1
+0     65   4    5    846  7.7  MFRC522_Rd
+0     61   3    5    808  6.2  MFRC522_Wr
+0     18   1    4    127  3.3  MFRC522_Clear_Bit
+0     17   1    4    120  2.8  MFRC522_Set_Bit
+ Inline         0    197  1.8  MFRC522_Reset
+ Inline         1     72  2.0  MFRC522_AntennaOn
+ Inline         0     25  1.2  MFRC522_AntennaOff
+0     83   5    0    298  1.9  MFRC522_Init
+0    228  13   17   2288 15.8  MFRC522_ToCard
+ Inline         7    319  6.0  MFRC522_Request
+ Inline         8    581  8.2  MFRC522_AntiColl
+0     61   3    3     89  3.6  MFRC522_isCard
+0    101   6    5    150  4.4  MFRC522_ReadCardSerial
+ Inline         3    760  4.5  lcd_read_byte
+0     37   2    2    262  3.7  lcd_read_nibble
+0     28   2    1    399  2.4  lcd_send_nibble
+0     69   4    3    415  3.7  lcd_send_byte
+0     63   4    6    852  6.2  lcd_init
+0     18   1    4    208  6.3  lcd_gotoxy
+0     44   2    1    354  4.7  lcd_putc
+0     15   1    2     63  2.9  SerialInterrupt
+0    459  26    4   3864  7.9  MAIN
+0     10   1    0             @const718
+0     86   5    4             @PSTRINGC7_694
+0     11   1    0             @const723
+0     13   1    0             @const724
+0     79   4   13             @DIV3232
+0     87   5   12             @PRINTF_L32U_694
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               22
+    Statements              365
+    Comments                215
+    Volume (V)              20912
+    Difficulty (D)          107.7
+    Effort to implement (E) 2253246
+    Time to implement (T)   34 hours, 46 minutes
+    Est Delivered Bugs (B)  6
+    Cyclomatic Complexity   42
+    Maintainability (MI)    40
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00050    77  0  
+00051-007FF  1688  279  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

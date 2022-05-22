@@ -1,0 +1,238 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028     @INTERRUPT_AREA
+029     @INTERRUPT_AREA
+02A     @INTERRUPT_AREA
+02B     i
+02C     time
+02D-03C UID
+03D-047 DatosTX
+048-052 DatosRX
+053     TagType
+054-057 Precio
+058-05B Tarjeta
+05C-05D @sprintf_string
+05E-05F MFRC522_ReadCardSerial.str
+05E-061 @PRINTF_L32U_694.P1
+05E     lcd_init.i
+05E     MFRC522_AntennaOn.stt
+05E-05F MFRC522_isCard.TagType
+05E     MAIN.@SCRATCH1
+05E     @PSTRINGC7_694.@SCRATCH1
+05F-062 lcd_init.LCD_INIT_STRING
+05F     @delay_us1.P1
+05F     MAIN.@SCRATCH2
+05F     @PSTRINGC7_694.@SCRATCH2
+060     MFRC522_Request.reqMode
+060     MFRC522_ReadCardSerial._status
+060     MFRC522_isCard.@SCRATCH1
+060     MAIN.@SCRATCH3
+060     @PSTRINGC7_694.@SCRATCH3
+061-062 MFRC522_Request.TagType
+061-062 MFRC522_AntiColl.serNum
+061     MFRC522_ReadCardSerial.@SCRATCH1
+061     MAIN.@SCRATCH4
+061     @PSTRINGC7_694.@SCRATCH4
+062     MFRC522_ReadCardSerial.@SCRATCH2
+062     @PRINTF_L32U_694.@SCRATCH1
+063     MFRC522_AntiColl._status
+063     MFRC522_Request._status
+063     lcd_init.@SCRATCH1
+063     @PRINTF_L32U_694.@SCRATCH2
+064     MFRC522_AntiColl.i
+064     MFRC522_Request.backBits
+064     @PRINTF_L32U_694.@SCRATCH3
+065     MFRC522_AntiColl.serNumCheck
+065     MFRC522_Request.@SCRATCH1
+065     @PRINTF_L32U_694.@SCRATCH4
+066     MFRC522_AntiColl.unLen
+066     MFRC522_Request.@SCRATCH2
+066     @PRINTF_L32U_694.@SCRATCH5
+067     MFRC522_ToCard.command
+067     MFRC522_AntiColl.@SCRATCH1
+067     @PRINTF_L32U_694.@SCRATCH6
+068-069 MFRC522_ToCard.sendData
+068     MFRC522_AntiColl.@SCRATCH2
+068     @PRINTF_L32U_694.@SCRATCH7
+069     @PRINTF_L32U_694.@SCRATCH8
+06A-06D @DIV3232.P1
+06A     MFRC522_ToCard.sendLen
+06A     lcd_putc.c
+06B-06C MFRC522_ToCard.backData
+06B     @delay_ms1.P1
+06B     lcd_gotoxy.x
+06C     lcd_gotoxy.y
+06D-06E MFRC522_ToCard.backLen
+06D     lcd_gotoxy.address
+06E-071 @DIV3232.P1
+06E     lcd_gotoxy.@SCRATCH1
+06F     MFRC522_ToCard._status
+06F     lcd_send_byte.address
+070     lcd_send_byte.n
+070     MFRC522_ToCard.irqEn
+071     lcd_read_byte.low
+071     MFRC522_ToCard.waitIRq
+071     lcd_send_byte.@SCRATCH1
+072     MFRC522_ToCard.lastBits
+072     lcd_send_nibble.n
+072     lcd_read_byte.high
+072     @DIV3232.@SCRATCH1
+073     lcd_read_nibble.n
+073     MFRC522_ToCard.n
+073     lcd_read_byte.@SCRATCH1
+073     @DIV3232.@SCRATCH2
+074     MFRC522_ToCard.i
+074     lcd_read_nibble.@SCRATCH1
+074     @DIV3232.@SCRATCH3
+075     @DIV3232.@SCRATCH4
+076     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     MFRC522_Clear_Bit.addr
+07B     MFRC522_Set_Bit.addr
+07B     MFRC522_ToCard.@SCRATCH1
+07C     MFRC522_Clear_Bit.mask
+07C     MFRC522_Set_Bit.mask
+07C     MFRC522_ToCard.@SCRATCH2
+07D     MFRC522_Set_Bit.tmp
+07D     MFRC522_Clear_Bit.tmp
+07D     MFRC522_ToCard.@SCRATCH3
+07E     MFRC522_Rd.address
+07E     MFRC522_Clear_Bit.@SCRATCH1
+07E     MFRC522_Set_Bit.@SCRATCH1
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0A0     MFRC522_Rd.i
+0A0     MFRC522_Wr.address
+0A1     MFRC522_Rd.ucAddr
+0A1     MFRC522_Wr.value
+0A2     MFRC522_Wr.i
+0A2     MFRC522_Rd.ucResult
+0A3     MFRC522_Wr.ucAddr
+0A3     MFRC522_Rd.@SCRATCH1
+0A4     MFRC522_Wr.@SCRATCH1
+0A5     SerialInterrupt.@SCRATCH1
+0A6     SerialInterrupt.@SCRATCH2
+0FF     @INTERRUPT_AREA
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+000051  SerialInterrupt
+000060  @const718.call
+00006A  @const723.call
+000075  @const724.call
+000082  @delay_ms1
+000096  lcd_send_nibble
+0000B2  lcd_read_nibble
+0000D7  lcd_send_byte
+0000DD  lcd_read_byte
+00011C  lcd_init
+00015B  lcd_gotoxy
+00016D  lcd_putc
+000199  @PSTRINGC7_694
+0001EF  MFRC522_Wr
+00022C  MFRC522_Rd
+00026D  MFRC522_Clear_Bit
+00027F  MFRC522_Set_Bit
+000290  MFRC522_Init
+000292  MFRC522_Reset
+0002D1  MFRC522_AntennaOff
+0002D6  MFRC522_AntennaOn
+0002E3  MFRC522_ToCard
+0003C7  MFRC522_isCard
+0003CD  MFRC522_Request
+000404  MFRC522_ReadCardSerial
+000408  MFRC522_AntiColl
+000469  @DIV3232
+0004B8  @PRINTF_L32U_694
+00050F  @delay_us1
+00051E  MAIN
+00051E  @cinit1
+00053C  @cinit2
+
+Project Directory:
+    D:\ZabavyPrototype\
+
+Project Files:
+    main.c                                                  [15-jul-15 19:10  CRC=AAE71816]
+    C:\Program Files (x86)\PICC\Devices\16F876A.h           [17-abr-15 14:49  CRC=310AB4C9]
+    RC522.h                                                 [04-jul-15 10:33  CRC=CBA86C73]
+    C:\Program Files (x86)\PICC\Drivers\LCD.c               [19-sep-13 16:38  CRC=D1A6378A]
+
+Source signature=4AE6A866
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=C922
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F876A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
